@@ -1,0 +1,515 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.3">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1">&lt;title&gt;Halftime Media — The real connection happens in Spanish&lt;/title&gt;</p>
+<p class="p1">&lt;meta name="description" content="Spanish-language content agency for the U.S. Hispanic market. AI-powered editorial, liveblogs, SEO, GEO, and cultural storytelling across all major sports."&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&amp;family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">,::before,*::after{margin:0;padding:0;box-sizing:border-box}</p>
+<p class="p1">:root{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--emerald:#0B3B2D;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--emerald-deep:#072A1F;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--emerald-light:#145A43;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--bone:#F5F1EB;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--bone-dark:#EBE6DD;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--champagne:#A89058;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--champagne-light:#BDA76E;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--text-dark:#1A1A18;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--text-mid:#5C5A52;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--text-light:#8A8780;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--display:'Playfair Display',Georgia,serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--body:'Outfit',-apple-system,sans-serif;</p>
+<p class="p1">}</p>
+<p class="p1">html{scroll-behavior:smooth;background:var(--bone)}</p>
+<p class="p1">body{background:var(--bone);color:var(--text-dark);font-family:var(--body);line-height:1.6;overflow-x:hidden}</p>
+<p class="p2"><br></p>
+<p class="p1">/* NAV */</p>
+<p class="p1">nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1rem 3rem;background:rgba(245,241,235,0.92);backdrop-filter:blur(20px);border-bottom:1px solid rgba(11,59,45,0.06)}</p>
+<p class="p1">.logo-mark{display:flex;align-items:center;gap:.6rem;text-decoration:none}</p>
+<p class="p1">.logo-mark svg{width:44px;height:36px;overflow:visible}</p>
+<p class="p1">.logo-text{font-family:var(–body);font-weight:700;font-size:.75rem;letter-spacing:.18em;color:var(–emerald)}</p>
+<p class="p1">.logo-text span{color:var(–champagne)}</p>
+<p class="p1">.nav-links{display:flex;gap:2rem}</p>
+<p class="p1">.nav-links a{color:var(–text-mid);text-decoration:none;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;font-weight:500;transition:color .3s}</p>
+<p class="p1">.nav-links a:hover{color:var(–champagne)}</p>
+<p class="p2"><br></p>
+<p class="p1">/* HERO */</p>
+<p class="p1">.hero{min-height:100vh;background:var(–emerald);color:var(–bone);display:grid;grid-template-columns:1.1fr .9fr;overflow:hidden}</p>
+<p class="p1">.hero-content{padding:8rem 4rem 4rem;display:flex;flex-direction:column;justify-content:center;position:relative}</p>
+<p class="p1">.hero-content::after{content:’’;position:absolute;right:0;top:0;bottom:0;width:1px;background:rgba(245,241,235,0.06)}</p>
+<p class="p1">.hero-eyebrow{font-size:.6rem;letter-spacing:.4em;text-transform:uppercase;color:var(–champagne-light);font-weight:600;margin-bottom:2rem}</p>
+<p class="p1">.hero h1{font-family:var(–display);font-weight:900;font-size:clamp(2.4rem,4.5vw,3.6rem);line-height:1.08;margin-bottom:1.5rem}</p>
+<p class="p1">.hero h1 em{font-style:italic;font-weight:400;color:var(–champagne-light)}</p>
+<p class="p1">.hero-body{font-size:.88rem;color:rgba(245,241,235,0.55);max-width:460px;font-weight:300;line-height:1.85;margin-bottom:2.5rem}</p>
+<p class="p1">.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}</p>
+<p class="p1">.btn-main{display:inline-block;padding:.85rem 2.2rem;background:var(–champagne);color:var(–emerald-deep);font-weight:600;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:all .3s}</p>
+<p class="p1">.btn-main:hover{background:var(–champagne-light);transform:translateY(-2px)}</p>
+<p class="p1">.btn-line{display:inline-block;padding:.85rem 2.2rem;background:transparent;border:1px solid rgba(245,241,235,0.2);color:var(–bone);font-weight:500;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:all .3s}</p>
+<p class="p1">.btn-line:hover{border-color:var(–champagne-light);color:var(–champagne-light);transform:translateY(-2px)}</p>
+<p class="p1">.hero-data{background:var(–emerald-deep);padding:4rem 3rem;display:flex;flex-direction:column;justify-content:center;gap:0;position:relative}</p>
+<p class="p1">.hero-data::before{content:’’;position:absolute;width:350px;height:350px;border-radius:50%;background:radial-gradient(circle,rgba(168,144,88,0.08) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%)}</p>
+<p class="p1">.data-row{display:flex;align-items:baseline;gap:1rem;padding:1.2rem 0;border-bottom:1px solid rgba(245,241,235,0.04);position:relative;z-index:1}</p>
+<p class="p1">.data-row:last-child{border-bottom:none}</p>
+<p class="p1">.data-num{font-family:var(–display);font-size:2.2rem;font-weight:900;color:var(–champagne-light);min-width:100px}</p>
+<p class="p1">.data-label{font-size:.78rem;color:rgba(245,241,235,0.45);font-weight:300;line-height:1.5}</p>
+<p class="p1">.data-src{font-size:.52rem;color:rgba(245,241,235,0.2);margin-top:.15rem}</p>
+<p class="p2"><br></p>
+<p class="p1">/* SHARED */</p>
+<p class="p1">section{scroll-margin-top:60px}</p>
+<p class="p1">.sec-label{font-size:.58rem;letter-spacing:.4em;text-transform:uppercase;color:var(–champagne);font-weight:600;margin-bottom:.8rem}</p>
+<p class="p1">.sec-title{font-family:var(–display);font-weight:900;line-height:1.1;color:var(–emerald)}</p>
+<p class="p1">.sec-desc{color:var(–text-mid);font-weight:300;line-height:1.8;font-size:.88rem}</p>
+<p class="p2"><br></p>
+<p class="p1">/* CREDENTIALS */</p>
+<p class="p1">.creds{padding:1.8rem 3rem;background:var(–bone-dark);text-align:center}</p>
+<p class="p1">.creds-label{font-size:.52rem;letter-spacing:.3em;text-transform:uppercase;color:var(–text-light);font-weight:500;margin-bottom:.8rem}</p>
+<p class="p1">.creds-logos{display:flex;justify-content:center;align-items:center;gap:2.5rem;flex-wrap:wrap}</p>
+<p class="p1">.creds-logos span{font-family:var(–body);font-size:.78rem;font-weight:600;color:var(–text-light);letter-spacing:.03em;opacity:.5;transition:opacity .3s}</p>
+<p class="p1">.creds-logos span:hover{opacity:1}</p>
+<p class="p2"><br></p>
+<p class="p1">/* GAP */</p>
+<p class="p1">.gap{padding:5rem 4rem;background:var(–bone)}</p>
+<p class="p1">.gap-layout{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}</p>
+<p class="p1">.gap h2{font-size:clamp(1.8rem,3vw,2.5rem);margin-bottom:1.2rem}</p>
+<p class="p1">.gap h2 em{font-style:italic;font-weight:400;color:var(–champagne)}</p>
+<p class="p1">.gap p{font-size:.88rem;margin-bottom:.8rem}</p>
+<p class="p1">.gap strong{color:var(–text-dark);font-weight:600}</p>
+<p class="p1">.league-grid{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}</p>
+<p class="p1">.league{background:var(–emerald);padding:1.2rem 1rem;color:var(–bone)}</p>
+<p class="p1">.league.alt{background:var(–emerald-light)}</p>
+<p class="p1">.league-name{font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(–champagne-light);margin-bottom:.3rem}</p>
+<p class="p1">.league-stat{font-family:var(–display);font-size:1.6rem;font-weight:900}</p>
+<p class="p1">.league-sub{font-size:.62rem;color:rgba(245,241,235,0.4);margin-top:.15rem}</p>
+<p class="p1">.gap-source{font-size:.55rem;color:var(–text-light);margin-top:1rem;text-align:right}</p>
+<p class="p2"><br></p>
+<p class="p1">/* WHY NOW */</p>
+<p class="p1">.why-now{padding:5rem 4rem;background:var(–emerald);color:var(–bone)}</p>
+<p class="p1">.why-now .sec-label{color:var(–champagne-light)}</p>
+<p class="p1">.why-now .sec-title{color:var(–bone);margin-bottom:2.5rem}</p>
+<p class="p1">.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(245,241,235,0.06);margin-bottom:2rem}</p>
+<p class="p1">.why-item{background:var(–emerald);padding:2rem;transition:background .3s}</p>
+<p class="p1">.why-item:hover{background:var(–emerald-light)}</p>
+<p class="p1">.why-date{font-size:.65rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(–champagne-light);margin-bottom:.3rem}</p>
+<p class="p1">.why-event{font-family:var(–display);font-size:1.05rem;font-weight:700;margin-bottom:.5rem}</p>
+<p class="p1">.why-detail{font-size:.75rem;color:rgba(245,241,235,0.45);line-height:1.65;font-weight:300}</p>
+<p class="p1">.why-cta{font-size:.88rem;color:rgba(245,241,235,0.5);font-weight:300;line-height:1.7;max-width:620px}</p>
+<p class="p1">.why-cta strong{color:var(–champagne-light);font-weight:600}</p>
+<p class="p1">.why-full{grid-column:1/-1}</p>
+<p class="p2"><br></p>
+<p class="p1">/* SERVICES */</p>
+<p class="p1">.services{padding:5rem 4rem;background:var(–bone)}</p>
+<p class="p1">.services h2{font-size:clamp(1.8rem,3vw,2.5rem);margin-bottom:.8rem}</p>
+<p class="p1">.services .sec-desc{max-width:560px;margin-bottom:3rem}</p>
+<p class="p1">.srv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}</p>
+<p class="p1">.srv{background:var(–bone-dark);padding:2rem 1.6rem 2rem 1.9rem;position:relative;border:1px solid transparent;transition:all .3s}</p>
+<p class="p1">.srv::before{content:’’;position:absolute;left:0;top:0;width:3px;height:100%;background:var(–champagne)}</p>
+<p class="p1">.srv:hover{border-color:rgba(11,59,45,0.08);transform:translateY(-2px)}</p>
+<p class="p1">.srv-icon{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(–champagne);font-weight:600;margin-bottom:.6rem}</p>
+<p class="p1">.srv h3{font-size:.9rem;font-weight:600;margin-bottom:.5rem;color:var(–emerald)}</p>
+<p class="p1">.srv p{font-size:.75rem;color:var(–text-mid);line-height:1.7;font-weight:300}</p>
+<p class="p2"><br></p>
+<p class="p1">/* MID CTA */</p>
+<p class="p1">.mid-cta{padding:3rem 4rem;background:var(–bone-dark);text-align:center}</p>
+<p class="p1">.mid-cta p{font-family:var(–display);font-size:clamp(1.2rem,2vw,1.6rem);font-weight:700;color:var(–emerald);margin-bottom:1.5rem}</p>
+<p class="p1">.mid-cta p em{font-style:italic;color:var(–champagne)}</p>
+<p class="p2"><br></p>
+<p class="p1">/* APPROACH */</p>
+<p class="p1">.approach{padding:5rem 4rem;background:var(–bone);display:grid;grid-template-columns:1.2fr 1fr;gap:4rem;align-items:start}</p>
+<p class="p1">.approach h2{font-size:clamp(1.8rem,3vw,2.5rem);margin-bottom:1.2rem}</p>
+<p class="p1">.approach p{font-size:.88rem;margin-bottom:.8rem}</p>
+<p class="p1">.approach strong{color:var(–text-dark);font-weight:600}</p>
+<p class="p1">.proof-card{background:var(–emerald);padding:2.5rem;color:var(–bone)}</p>
+<p class="p1">.proof-card .big{font-family:var(–display);font-size:3.5rem;font-weight:900;color:var(–champagne-light);line-height:1}</p>
+<p class="p1">.proof-card h3{font-family:var(–display);font-size:1.2rem;font-weight:700;margin:.4rem 0 .7rem}</p>
+<p class="p1">.proof-card p{color:rgba(245,241,235,0.5);font-size:.78rem;line-height:1.7}</p>
+<p class="p2"><br></p>
+<p class="p1">/* TEAM + WORK combined */</p>
+<p class="p1">.team-work{padding:5rem 4rem;background:var(–emerald);color:var(–bone)}</p>
+<p class="p1">.team-work h2{font-size:clamp(1.8rem,3vw,2.5rem);color:var(–bone);margin-bottom:.5rem}</p>
+<p class="p1">.team-work .sec-desc{color:rgba(245,241,235,0.45);max-width:560px;margin-bottom:3rem}</p>
+<p class="p1">.tw-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}</p>
+<p class="p1">.tw-card{background:var(–emerald-deep);padding:2.2rem;border-top:2px solid var(–champagne);transition:background .3s}</p>
+<p class="p1">.tw-card:hover{background:var(–emerald-light)}</p>
+<p class="p1">.tw-name{font-family:var(–display);font-size:1.6rem;font-weight:700}</p>
+<p class="p1">.tw-role{color:var(–champagne-light);font-size:.7rem;font-weight:600;margin-top:.25rem}</p>
+<p class="p1">.tw-sub{color:rgba(245,241,235,0.3);font-size:.65rem;margin-top:.15rem}</p>
+<p class="p1">.tw-highlights{list-style:none;margin-top:1.2rem;display:flex;flex-direction:column;gap:.35rem}</p>
+<p class="p1">.tw-highlights li{font-size:.72rem;color:rgba(245,241,235,0.5);padding-left:.9rem;position:relative;font-weight:300}</p>
+<p class="p1">.tw-highlights li::before{content:’’;position:absolute;left:0;top:.42rem;width:4px;height:4px;background:var(–champagne-light);border-radius:50%}</p>
+<p class="p1">.tw-links{margin-top:1.2rem;padding-top:1rem;border-top:1px solid rgba(245,241,235,0.06);display:flex;flex-wrap:wrap;gap:.5rem}</p>
+<p class="p1">.tw-links a{font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(–champagne-light);text-decoration:none;padding:.3rem .7rem;border:1px solid rgba(245,241,235,0.1);transition:all .2s;font-weight:500}</p>
+<p class="p1">.tw-links a:hover{background:rgba(245,241,235,0.06);border-color:var(–champagne-light)}</p>
+<p class="p2"><br></p>
+<p class="p1">/* AUDIENCE */</p>
+<p class="p1">.audience{padding:5rem 4rem;background:var(–bone-dark)}</p>
+<p class="p1">.audience h2{font-size:clamp(1.6rem,2.5vw,2.2rem);margin-bottom:.5rem}</p>
+<p class="p1">.audience .sec-desc{max-width:500px;margin-bottom:2.5rem}</p>
+<p class="p1">.aud-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0}</p>
+<p class="p1">.aud{padding:1.8rem 1.4rem;border-left:1px solid rgba(11,59,45,0.08);transition:background .2s}</p>
+<p class="p1">.aud:first-child{border-left:none}</p>
+<p class="p1">.aud:hover{background:rgba(11,59,45,0.03)}</p>
+<p class="p1">.aud h4{font-family:var(–display);font-size:.95rem;font-weight:700;color:var(–emerald);margin-bottom:.4rem}</p>
+<p class="p1">.aud p{font-size:.72rem;color:var(–text-mid);line-height:1.6;font-weight:300}</p>
+<p class="p2"><br></p>
+<p class="p1">/* CONTACT */</p>
+<p class="p1">.contact{padding:5rem 4rem;background:var(–bone);text-align:center}</p>
+<p class="p1">.contact h2{font-size:clamp(1.8rem,3.5vw,2.8rem);margin:0 auto .6rem}</p>
+<p class="p1">.contact .sec-desc{max-width:480px;margin:0 auto 2rem}</p>
+<p class="p1">.contact-btns{display:flex;justify-content:center;gap:1rem;margin-bottom:2rem}</p>
+<p class="p1">.btn-em{display:inline-block;padding:.85rem 2.2rem;background:var(–emerald);color:var(–bone);font-weight:600;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:all .3s;border:none;cursor:pointer}</p>
+<p class="p1">.btn-em:hover{background:var(–emerald-light);transform:translateY(-2px)}</p>
+<p class="p1">.btn-ol{display:inline-block;padding:.85rem 2.2rem;background:transparent;border:1px solid var(–emerald);color:var(–emerald);font-weight:500;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:all .3s}</p>
+<p class="p1">.btn-ol:hover{background:var(–emerald);color:var(–bone);transform:translateY(-2px)}</p>
+<p class="p1">.contact-form{max-width:480px;margin:0 auto 2rem;display:flex;flex-direction:column;gap:.6rem}</p>
+<p class="p1">.form-row{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}</p>
+<p class="p1">.contact-form input,.contact-form textarea{background:var(–bone-dark);border:1px solid rgba(11,59,45,0.08);padding:.8rem 1rem;font-family:var(–body);font-size:.82rem;color:var(–text-dark);outline:none;transition:border-color .3s;width:100%}</p>
+<p class="p1">.contact-form input:focus,.contact-form textarea:focus{border-color:var(–champagne)}</p>
+<p class="p1">.contact-form textarea{resize:vertical;min-height:80px}</p>
+<p class="p1">.contact-form button{align-self:center;margin-top:.3rem}</p>
+<p class="p1">.form-note{font-size:.65rem;color:var(–text-light);margin-bottom:1.5rem;letter-spacing:.05em}</p>
+<p class="p1">.contact-people{display:flex;justify-content:center;gap:5rem}</p>
+<p class="p1">.cp{text-align:left}</p>
+<p class="p1">.cp h4{font-family:var(–display);font-size:.95rem;font-weight:700;color:var(–emerald)}</p>
+<p class="p1">.cp .role{color:var(–champagne);font-size:.65rem;font-weight:500;margin-top:.15rem}</p>
+<p class="p1">.cp a{color:var(–text-mid);font-size:.72rem;text-decoration:none;display:block;margin-top:.25rem;transition:color .3s}</p>
+<p class="p1">.cp a:hover{color:var(–champagne)}</p>
+<p class="p2"><br></p>
+<p class="p1">/* FOOTER */</p>
+<p class="p1">footer{padding:2.5rem 4rem;background:var(–emerald-deep);color:rgba(245,241,235,0.25);display:flex;justify-content:space-between;align-items:center}</p>
+<p class="p1">footer p{font-size:.58rem}</p>
+<p class="p1">footer span{color:var(–champagne-light)}</p>
+<p class="p2"><br></p>
+<p class="p1">/* EMAIL POPUP */</p>
+<p class="p1">.email-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(7,42,31,0.7);z-index:200;align-items:center;justify-content:center;backdrop-filter:blur(6px)}</p>
+<p class="p1">.email-overlay.active{display:flex}</p>
+<p class="p1">.email-popup{background:var(–bone);padding:2.5rem;max-width:400px;width:90%;position:relative;border-top:3px solid var(–champagne)}</p>
+<p class="p1">.email-popup h3{font-family:var(–display);font-size:1.3rem;font-weight:900;color:var(–emerald);margin-bottom:1.5rem}</p>
+<p class="p1">.email-row{display:flex;align-items:center;justify-content:space-between;padding:.8rem 1rem;background:var(–bone-dark);margin-bottom:.5rem;border:1px solid rgba(11,59,45,0.06)}</p>
+<p class="p1">.email-row span{font-size:.82rem;color:var(–text-dark);font-weight:400}</p>
+<p class="p1">.email-row button{background:var(–emerald);color:var(–bone);border:none;padding:.4rem 1rem;font-size:.65rem;font-family:var(–body);font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:background .2s}</p>
+<p class="p1">.email-row button:hover{background:var(–emerald-light)}</p>
+<p class="p1">.email-row button.copied{background:var(–champagne)}</p>
+<p class="p1">.email-close{position:absolute;top:1rem;right:1.2rem;background:none;border:none;font-size:1.2rem;color:var(–text-mid);cursor:pointer;font-family:var(–body)}</p>
+<p class="p1">.email-close:hover{color:var(–emerald)}</p>
+<p class="p2"><br></p>
+<p class="p1">/* ANIMATIONS */</p>
+<p class="p1">@keyframes fadeUp{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}</p>
+<p class="p1">.hero-content&gt;*{opacity:0;animation:fadeUp .7s forwards}</p>
+<p class="p1">.hero-eyebrow{animation-delay:.1s}.hero h1{animation-delay:.25s}.hero-body{animation-delay:.4s}.hero-ctas{animation-delay:.55s}</p>
+<p class="p2"><br></p>
+<p class="p1">/* RESPONSIVE */</p>
+<p class="p1">@media(max-width:900px){</p>
+<p class="p1">nav{padding:.8rem 1.5rem}.nav-links{display:none}</p>
+<p class="p1">.hero{grid-template-columns:1fr}.hero-content{padding:6rem 1.5rem 2rem}.hero-data{padding:2rem 1.5rem}</p>
+<p class="p1">.gap,.services,.audience,.approach,.contact,.team-work,.why-now,.mid-cta{padding:3.5rem 1.5rem}</p>
+<p class="p1">.creds{padding:1.5rem}</p>
+<p class="p1">.gap-layout,.approach{grid-template-columns:1fr}</p>
+<p class="p1">.srv-grid{grid-template-columns:1fr}</p>
+<p class="p1">.why-grid{grid-template-columns:1fr}</p>
+<p class="p1">.aud-row{grid-template-columns:1fr 1fr}</p>
+<p class="p1">.aud{border-left:none;border-top:1px solid rgba(11,59,45,0.08)}.aud:first-child,.aud:nth-child(2){border-top:none}</p>
+<p class="p1">.tw-grid{grid-template-columns:1fr}</p>
+<p class="p1">.league-grid{grid-template-columns:1fr 1fr}</p>
+<p class="p1">.contact-people{flex-direction:column;align-items:center;gap:1.5rem}</p>
+<p class="p1">.contact-btns{flex-direction:column;align-items:center}</p>
+<p class="p1">.hero-ctas{flex-direction:column;align-items:flex-start}</p>
+<p class="p1">.form-row{grid-template-columns:1fr}</p>
+<p class="p1">}</p>
+<p class="p1">@media(max-width:600px){</p>
+<p class="p1">.aud-row{grid-template-columns:1fr}</p>
+<p class="p1">.league-grid{grid-template-columns:1fr}</p>
+<p class="p1">.data-num{font-size:1.8rem;min-width:80px}</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;a href="#" class="logo-mark"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;svg viewBox="0 0 46 36" fill="none" xmlns="http://www.w3.org/2000/svg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;text x="3" y="26" font-family="'Playfair Display',serif" font-weight="900" font-style="italic" font-size="28" fill="#0B3B2D" letter-spacing="-1"&gt;HM&lt;/text&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;line x1="3" y1="31" x2="43" y2="31" stroke="#A89058" stroke-width="2.5"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="logo-text"&gt;HALFTIME &lt;span&gt;MEDIA&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="nav-links"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#services"&gt;Services&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#approach"&gt;Approach&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#team"&gt;Team&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#contact"&gt;Contact&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- HERO --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;section class="hero"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="hero-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="hero-eyebrow"&gt;Spanish-language content agency&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;While everyone competes for attention in English, the real connection happens &lt;em&gt;in Spanish&lt;/em&gt;&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="hero-body"&gt;Editorial, liveblogs, video, and real-time coverage in Spanish — powered by AI, delivered with the cultural depth that actually connects with Hispanic audiences in the U.S. and globally.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="hero-ctas"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#" onclick="openEmails(event)" class="btn-main"&gt;Get in touch →&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="https://instagram.com/wiktorjonathan" target="_blank" class="btn-line"&gt;Instagram →&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="hero-data"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="data-row"&gt;&lt;div class="data-num"&gt;1 in 5&lt;/div&gt;&lt;div&gt;&lt;div class="data-label"&gt;U.S. sports fans is Hispanic — but gets less than 11% of broadcast content&lt;/div&gt;&lt;div class="data-src"&gt;McKinsey / Nielsen 2025&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="data-row"&gt;&lt;div class="data-num"&gt;72%&lt;/div&gt;&lt;div&gt;&lt;div class="data-label"&gt;of Latino sports fans are Millennials or Gen Z — younger than any other group&lt;/div&gt;&lt;div class="data-src"&gt;Nielsen Game Changer 2024&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="data-row"&gt;&lt;div class="data-num"&gt;⅓&lt;/div&gt;&lt;div&gt;&lt;div class="data-label"&gt;of U.S. sports economy growth by 2035 will be driven by Latinos&lt;/div&gt;&lt;div class="data-src"&gt;McKinsey / Telemundo 2025&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="data-row"&gt;&lt;div class="data-num"&gt;37%&lt;/div&gt;&lt;div&gt;&lt;div class="data-label"&gt;more likely to be loyal to brands that sponsor sports they follow&lt;/div&gt;&lt;div class="data-src"&gt;Nielsen Diverse Intelligence 2024&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- CREDENTIALS --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="creds"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="creds-label"&gt;Our team's editorial background&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="creds-logos"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;span&gt;ESPN&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;span&gt;La Naci&amp;oacute;n&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;span&gt;Clar&amp;iacute;n&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;span&gt;TN Todo Noticias&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;span&gt;Mercado Libre&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;span&gt;Better Collective&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;span&gt;ImpreMedia&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;span&gt;Artear&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- THE GAP --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;section class="gap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="gap-layout"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="sec-label"&gt;The opportunity&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="sec-title"&gt;Latinos are everywhere in U.S. sports. &lt;em&gt;The content isn't.&lt;/em&gt;&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="sec-desc"&gt;Across every major league — NFL, NBA, MLB, MLS, NHL — Latinos represent a massive and growing share of the fan base. But Spanish-language content barely exists. Most teams have zero social presence in Spanish. Most leagues produce one generic feed that ignores the cultural differences between Mexican, Colombian, Venezuelan, Argentine, and Central American audiences.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="sec-desc"&gt;&lt;strong&gt;Halftime Media closes that gap&lt;/strong&gt; with hyperlocal editorial, liveblogs, real-time coverage, and content designed for how this audience actually consumes media.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="league-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="league"&gt;&lt;div class="league-name"&gt;MLS&lt;/div&gt;&lt;div class="league-stat"&gt;28%&lt;/div&gt;&lt;div class="league-sub"&gt;of fans are Latino&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="league alt"&gt;&lt;div class="league-name"&gt;NBA&lt;/div&gt;&lt;div class="league-stat"&gt;20%&lt;/div&gt;&lt;div class="league-sub"&gt;of fans are Latino&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="league alt"&gt;&lt;div class="league-name"&gt;MLB&lt;/div&gt;&lt;div class="league-stat"&gt;17%&lt;/div&gt;&lt;div class="league-sub"&gt;of fans · 30% of players&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="league"&gt;&lt;div class="league-name"&gt;NFL&lt;/div&gt;&lt;div class="league-stat"&gt;16%&lt;/div&gt;&lt;div class="league-sub"&gt;of fans · fastest-growing demo&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="league"&gt;&lt;div class="league-name"&gt;NHL&lt;/div&gt;&lt;div class="league-stat"&gt;14%&lt;/div&gt;&lt;div class="league-sub"&gt;of fans are Latino&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="league alt"&gt;&lt;div class="league-name"&gt;UFC&lt;/div&gt;&lt;div class="league-stat"&gt;22%&lt;/div&gt;&lt;div class="league-sub"&gt;of U.S. audience is Hispanic&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="gap-source"&gt;Source: McKinsey / GWI / Nielsen 2024–2025&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- WHY NOW --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;section class="why-now"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="sec-label"&gt;Why now&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2 class="sec-title"&gt;This isn't a trend. It's a tipping point.&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="why-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="why-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="why-date"&gt;Feb 2026 · Proof of concept&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="why-event"&gt;Bad Bunny's Super Bowl broke every record&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="why-detail"&gt;First halftime show performed almost entirely in Spanish. 4.15 billion global views in 24 hours — the most-watched halftime show of all time. Telemundo peaked at 4.8M viewers, the highest Spanish-language Super Bowl audience ever. The demand is real.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="why-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="why-date"&gt;2023–2026 · The Messi Effect&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="why-event"&gt;One player transformed an entire league&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="why-detail"&gt;Inter Miami's revenue jumped 260% — from $56M to $200M. The 2025 MLS Cup drew 4.6M viewers, the youngest audience ever (70% under 45). The 2026 season opener packed 75,673 fans into the LA Coliseum. 9.7M tuned in on opening weekend. Messi proved the appetite for soccer content in the U.S. is massive — and overwhelmingly Latino.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="why-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="why-date"&gt;Jun–Jul 2026&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="why-event"&gt;FIFA World Cup on U.S. soil&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="why-detail"&gt;11 host cities, 35M+ Hispanics in those markets. The biggest sporting event in history — in Spanish-speaking neighborhoods. The organizations that build their content infrastructure now will own the audience after.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="why-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="why-date"&gt;2025–2026&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="why-event"&gt;Leagues are going global — and Latino&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="why-detail"&gt;The NFL played in Brazil and Madrid. The NBA is expanding its Spanish-language coverage. MLB is 30% Latino on the field but barely 11% in broadcast hours. Every league is waking up to this audience.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="why-item why-full"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="why-date"&gt;By 2035&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="why-event"&gt;Latinos will drive ⅓ of sports economy growth&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="why-detail"&gt;$3.6 trillion in Latino buying power. McKinsey projects one-third of all U.S. sports economy growth will come from this demographic. The question isn't whether to invest — it's how fast.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="why-cta"&gt;Every month without a Spanish-language content strategy is a month your competitors get closer to this audience. &lt;strong&gt;We're ready to start today.&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- SERVICES --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;section class="services" id="services"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="sec-label"&gt;What we do&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2 class="sec-title"&gt;Content the Hispanic audience recognizes as their own&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="sec-desc"&gt;We don't translate. We create — from the cultural logic of each market, with AI as the engine and the human touch that builds identity.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="srv-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="srv"&gt;&lt;div class="srv-icon"&gt;Editorial&lt;/div&gt;&lt;h3&gt;Hyperlocal content&lt;/h3&gt;&lt;p&gt;Daily production segmented by nationality: Mexican, Colombian, Venezuelan, Argentine, Dominican, Central American. AI automation to scale without losing voice. SEO for Search and Discover.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="srv"&gt;&lt;div class="srv-icon"&gt;Real-time&lt;/div&gt;&lt;h3&gt;Liveblogs &amp; live coverage&lt;/h3&gt;&lt;p&gt;Game-day liveblogs, real-time event coverage, and breaking news in Spanish. The live format fans refresh constantly — and almost nobody offers in Spanish for U.S. leagues.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="srv"&gt;&lt;div class="srv-icon"&gt;Social&lt;/div&gt;&lt;h3&gt;Social media activation&lt;/h3&gt;&lt;p&gt;Native content for Instagram, X, YouTube, and TikTok from each community's cultural logic. Original production with the Latino color that's missing from the conversation.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="srv"&gt;&lt;div class="srv-icon"&gt;Video&lt;/div&gt;&lt;h3&gt;Creator-first video&lt;/h3&gt;&lt;p&gt;Reels, Shorts, and clips with recognizable faces and voices. The content format organizations have in English but not in Spanish. Viral-ready, culturally relevant.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="srv"&gt;&lt;div class="srv-icon"&gt;Discovery&lt;/div&gt;&lt;h3&gt;SEO, GEO &amp; LLM optimization&lt;/h3&gt;&lt;p&gt;Content engineered for traditional search, Google Discover, and generative AI engines. Structured for visibility wherever your audience is looking.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="srv"&gt;&lt;div class="srv-icon"&gt;Growth&lt;/div&gt;&lt;h3&gt;Community &amp; alliances&lt;/h3&gt;&lt;p&gt;Distribution through La Nación US, ESPN, Clarín, and regional outlets. We build bridges between your brand and local Latino communities across key U.S. markets.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- MID CTA --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="mid-cta"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;The audience is there. The content isn't. &lt;em&gt;Let's fix that.&lt;/em&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;a href="#" onclick="openEmails(event)" class="btn-em"&gt;Get in touch →&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- APPROACH --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;section class="approach" id="approach"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="sec-label"&gt;Our approach&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="sec-title"&gt;AI automation with Latino soul&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="sec-desc"&gt;&lt;strong&gt;Artificial intelligence is our engine, not our voice.&lt;/strong&gt; We use AI to detect trends before the competition, scale production without losing quality, optimize for Search, Discover, and generative engines, and monitor performance in real time.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="sec-desc"&gt;But the content has a name, a face, and an accent. It carries cultural references no algorithm can invent. It knows the difference between a Dominican baseball fan and an Argentine soccer fan. It understands that 68% of U.S. Latinos speak at least some Spanish — and that reaching them in their language isn't a nice-to-have, it's a competitive advantage.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="sec-desc"&gt;&lt;strong&gt;The result:&lt;/strong&gt; content that scales like technology and connects like a conversation between friends.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="proof-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="big"&gt;+27%&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;organic traffic growth in 4 months&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Documented result at La Nación US Hispanics using the same methodology we bring to every client: daily editorial production, market segmentation, AI-powered SEO, and continuous Discover monitoring.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- TEAM + WORK --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;section class="team-work" id="team"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="sec-label" style="color:var(--champagne-light)"&gt;The team&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2 class="sec-title" style="color:var(--bone)"&gt;Editorial expertise meets AI &amp; design thinking&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="sec-desc" style="color:rgba(245,241,235,0.45);max-width:560px;margin-bottom:3rem"&gt;Two complementary profiles that together offer something that doesn't exist in the market.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="tw-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tw-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="tw-name"&gt;Jonathan Wiktor&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="tw-role"&gt;Co-founder · AI Growth Specialist&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="tw-sub"&gt;Digital Editor | La Nación US Hispanics&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;ul class="tw-highlights"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;20+ years in digital media — ESPN, Clarín, Artear-TN, La Nación&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;13,000+ articles published · 400+/month capacity&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;+27% organic traffic in 4 months&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;AI growth specialist — editorial automation at scale&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;SEO, Google Discover, GEO, sports, migration, politics&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="tw-links"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://www.lanacion.com.ar/autor/jonathan-wiktor-8963/" target="_blank"&gt;La Nación&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://www.lanacion.com.ar/estados-unidos/nueva-york/son-argentinos-empezaron-lavando-copas-y-hoy-venden-el-plato-favorito-de-messi-en-nueva-york-sueno-nid01022026/" target="_blank"&gt;Featured story&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://ar.linkedin.com/in/jonathan-wiktor-07756410a" target="_blank"&gt;LinkedIn&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tw-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="tw-name"&gt;Federico Trabucci&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="tw-role"&gt;Co-founder · GEO, LLMs &amp; UX Design&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="tw-sub"&gt;Sr. UX Writer | Mercado Libre&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;ul class="tw-highlights"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;GEO &amp; LLM optimization specialist&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;Sr. UX Writer at Mercado Libre — LatAm's largest tech company&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;Sports journalist — TN Todo Noticias, ImpreMedia&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;SEO Content Manager at Better Collective&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;UX design &amp; content strategy for audience growth&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="tw-links"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://tn.com.ar/autor/Fedepbj/" target="_blank"&gt;TN Todo Noticias&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://www.linkedin.com/in/federicotrabucci/" target="_blank"&gt;LinkedIn&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- AUDIENCE --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;section class="audience"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="sec-label"&gt;Who we serve&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2 class="sec-title"&gt;Are you ready to capture this vital audience?&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="aud-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="aud"&gt;&lt;h4&gt;Sports leagues &amp; teams&lt;/h4&gt;&lt;p&gt;NFL, NBA, MLB, MLS, NHL — most clubs have zero Spanish-language social presence. We build the editorial bridge to millions of fans already watching.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="aud"&gt;&lt;h4&gt;Media companies&lt;/h4&gt;&lt;p&gt;Scale your Spanish-language output without expanding your team. AI-powered editorial with cultural precision and real-time coverage.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="aud"&gt;&lt;h4&gt;Brands &amp; advertisers&lt;/h4&gt;&lt;p&gt;Latinos are 37% more likely to be loyal to brands that sponsor sports they follow. We create the content ecosystem that earns that loyalty.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="aud"&gt;&lt;h4&gt;Digital platforms&lt;/h4&gt;&lt;p&gt;Content for Discover, Apple News, generative engines, or social feeds. SEO and GEO-native editorial at scale for every channel.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- CONTACT --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;section class="contact" id="contact"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="sec-label"&gt;Let's talk&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2 class="sec-title"&gt;Ready to connect with the Hispanic market?&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="sec-desc"&gt;Whether you're a sports league, a media company, a brand, or a platform — if your audience speaks Spanish, we should be talking.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="contact-btns"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#" onclick="openEmails(event)" class="btn-em"&gt;Email us →&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="https://instagram.com/wiktorjonathan" target="_blank" class="btn-ol"&gt;Instagram →&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;form class="contact-form" action="https://formspree.io/f/xyzgwkdp" method="POST"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="form-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;input type="text" name="name" placeholder="Your name" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;input type="text" name="company" placeholder="Company / Organization"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;input type="email" name="email" placeholder="Your email" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;textarea name="message" placeholder="Tell us about your project — what audience are you trying to reach?" rows="4" required&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button type="submit" class="btn-em"&gt;Send message →&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="form-note"&gt;Or reach us directly:&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="contact-people"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="cp"&gt;&lt;h4&gt;Jonathan Wiktor&lt;/h4&gt;&lt;div class="role"&gt;Co-founder · AI Growth&lt;/div&gt;&lt;a href="#" onclick="openEmails(event)"&gt;jwiktor@halftime.media&lt;/a&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="cp"&gt;&lt;h4&gt;Federico Trabucci&lt;/h4&gt;&lt;div class="role"&gt;Co-founder · GEO &amp; UX&lt;/div&gt;&lt;a href="#" onclick="openEmails(event)"&gt;ftrabucci@halftime.media&lt;/a&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;&amp;copy; 2026 HALFTIME &lt;span&gt;MEDIA&lt;/span&gt;. Spanish-language content powered by AI with Latino soul.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;Buenos Aires &amp;times; New York &amp;times; Miami&lt;/p&gt;</p>
+<p class="p1">&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- EMAIL POPUP --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="email-overlay" id="emailPopup" onclick="closeEmails(event)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="email-popup" onclick="event.stopPropagation()"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="email-close" onclick="closeEmails(event)"&gt;&amp;#x2715;&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Get in touch&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="email-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span&gt;jwiktor@halftime.media&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button onclick="copyEmail(this,'jwiktor@halftime.media')"&gt;Copy&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="email-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span&gt;ftrabucci@halftime.media&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button onclick="copyEmail(this,'ftrabucci@halftime.media')"&gt;Copy&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div style="margin-top:.8rem;padding-top:.8rem;border-top:1px solid rgba(11,59,45,0.08)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="email-row" style="background:var(--emerald)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span style="color:var(--bone);font-weight:500"&gt;contact@halftime.media&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button onclick="copyEmail(this,'contact@halftime.media')" style="background:var(--champagne);color:var(--emerald-deep)"&gt;Copy&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">function openEmails(e){e.preventDefault();document.getElementById('emailPopup').classList.add('active')}</p>
+<p class="p1">function closeEmails(e){e.preventDefault();document.getElementById('emailPopup').classList.remove('active')}</p>
+<p class="p1">function copyEmail(btn,email){navigator.clipboard.writeText(email).then(function(){btn.textContent='Copied!';btn.classList.add('copied');setTimeout(function(){btn.textContent='Copy';btn.classList.remove('copied')},2000)})}</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
