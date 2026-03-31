@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halftime Media — The real connection happens in Spanish</title>
+<meta name="description" content="Spanish-language content agency for the U.S. Hispanic market. AI-powered editorial, liveblogs, SEO, GEO, and cultural storytelling across all major sports.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --emerald:#0B3B2D;
+  --emerald-deep:#072A1F;
+  --emerald-light:#145A43;
+  --bone:#F5F1EB;
+  --bone-dark:#EBE6DD;
+  --champagne:#A89058;
+  --champagne-light:#BDA76E;
+  --text-dark:#1A1A18;
+  --text-mid:#5C5A52;
+  --text-light:#8A8780;
+  --display:'Playfair Display',Georgia,serif;
+  --body:'Outfit',-apple-system,sans-serif;
+}
+html{scroll-behavior:smooth;background:var(--bone)}
+body{background:var(--bone);color:var(--text-dark);font-family:var(--body);line-height:1.6;overflow-x:hidden}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1rem 3rem;background:rgba(245,241,235,0.92);backdrop-filter:blur(20px);border-bottom:1px solid rgba(11,59,45,0.06)}
+.logo-mark{display:flex;align-items:center;gap:.8rem;text-decoration:none}
+.hm-logo{display:flex;flex-direction:column;align-items:flex-start;gap:2px}
+.hm-letters{font-family:var(--display);font-weight:900;font-style:italic;font-size:1.4rem;color:var(--emerald);letter-spacing:-0.5px;line-height:1}
+.hm-rule{display:block;width:32px;height:2.5px;background:var(--champagne)}
+.logo-text{font-family:var(--body);font-weight:700;font-size:.7rem;letter-spacing:.15em;color:var(--emerald);text-transform:uppercase}
+.logo-text span{color:var(--champagne)}
+.nav-links{display:flex;gap:2.5rem}
+.nav-links a{color:var(--text-mid);text-decoration:none;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;font-weight:500;transition:color .3s}
+.nav-links a:hover{color:var(--champagne)}
+
+/* HERO */
+.hero{min-height:100vh;background:var(--emerald);color:var(--bone);display:grid;grid-template-columns:1.1fr .9fr;overflow:hidden;padding-top:4rem}
+.hero-content{padding:6rem 4rem 4rem;display:flex;flex-direction:column;justify-content:center;position:relative}
+.hero-content::after{content:'';position:absolute;right:0;top:0;bottom:0;width:1px;background:rgba(245,241,235,0.06)}
+.hero-eyebrow{font-size:.6rem;letter-spacing:.4em;text-transform:uppercase;color:var(--champagne-light);font-weight:600;margin-bottom:2rem}
+.hero h1{font-family:var(--display);font-weight:900;font-size:clamp(2.4rem,4.5vw,3.6rem);line-height:1.08;margin-bottom:1.5rem}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--champagne-light)}
+.hero-body{font-size:.88rem;color:rgba(245,241,235,0.55);max-width:460px;font-weight:300;line-height:1.85;margin-bottom:2.5rem}
+.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-main{display:inline-block;padding:.85rem 2.2rem;background:var(--champagne);color:var(--emerald-deep);font-weight:600;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:all .3s;border:none;cursor:pointer}
+.btn-main:hover{background:var(--champagne-light);transform:translateY(-2px)}
+.btn-line{display:inline-block;padding:.85rem 2.2rem;background:transparent;border:2px solid var(--bone);color:var(--bone);font-weight:600;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:all .3s}
+.btn-line:hover{background:var(--bone);color:var(--emerald);transform:translateY(-2px)}
+.hero-data{background:var(--emerald-deep);padding:4rem 3rem;display:flex;flex-direction:column;justify-content:center;gap:0;position:relative}
+.hero-data::before{content:'';position:absolute;width:350px;height:350px;border-radius:50%;background:radial-gradient(circle,rgba(168,144,88,0.08) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%)}
+.data-row{display:flex;align-items:baseline;gap:1rem;padding:1.2rem 0;border-bottom:1px solid rgba(245,241,235,0.04);position:relative;z-index:1}
+.data-row:last-child{border-bottom:none}
+.data-num{font-family:var(--display);font-size:2.2rem;font-weight:900;color:var(--champagne-light);min-width:100px}
+.data-label{font-size:.78rem;color:rgba(245,241,235,0.45);font-weight:300;line-height:1.5}
+.data-src{font-size:.52rem;color:rgba(245,241,235,0.2);margin-top:.15rem}
+
+/* SECTION BASE */
+section{padding:5rem 4rem}
+.sec-label{font-size:.6rem;letter-spacing:.4em;text-transform:uppercase;color:var(--champagne);font-weight:600;margin-bottom:1rem}
+.sec-title{font-family:var(--display);font-size:clamp(1.8rem,3.5vw,3rem);font-weight:900;line-height:1.15;margin-bottom:2rem;max-width:800px}
+.sec-desc{font-size:.95rem;color:var(--text-mid);max-width:600px;margin-bottom:2rem}
+
+/* GAP ANALYSIS */
+.gap-section{background:var(--bone-dark);padding:5rem 4rem}
+.gap-container{max-width:1200px;margin:0 auto}
+.gap-title{font-family:var(--display);font-size:clamp(1.8rem,3vw,2.5rem);font-weight:900;margin-bottom:1rem;color:var(--emerald)}
+.gap-subtitle{font-size:1rem;color:var(--text-mid);max-width:700px;margin-bottom:3rem}
+.gap-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-bottom:3rem}
+.gap-card{background:var(--bone);padding:2rem;border-radius:4px}
+.league-stat{font-family:var(--display);font-size:2rem;font-weight:900;color:var(--champagne)}
+.league-sub{font-size:.85rem;color:var(--text-mid);margin-top:.5rem}
+.gap-source{font-size:.7rem;color:var(--text-light);margin-top:1rem;text-align:right}
+
+/* WHY NOW */
+.why-now{padding:5rem 4rem;background:var(--emerald);color:var(--bone)}
+.why-now .sec-label{color:var(--champagne-light)}
+.why-now .sec-title{color:var(--bone)}
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(245,241,235,0.06);margin-bottom:2rem}
+.why-item{background:var(--emerald);padding:2rem;transition:background .3s}
+.why-item:hover{background:var(--emerald-light)}
+.why-date{font-size:.65rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--champagne-light);margin-bottom:.3rem}
+.why-event{font-family:var(--display);font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
+.why-detail{font-size:.88rem;color:rgba(245,241,235,0.45);line-height:1.65;font-weight:300}
+.why-cta{font-size:1rem;color:rgba(245,241,235,0.5);font-weight:300;line-height:1.7;max-width:620px}
+.why-cta strong{color:var(--champagne-light);font-weight:600}
+.why-full{grid-column:1/-1}
+
+/* SERVICES */
+.services{padding:5rem 4rem;background:var(--bone)}
+.services-container{max-width:1200px;margin:0 auto}
+.services h2{font-size:clamp(1.8rem,3vw,2.5rem);margin-bottom:.8rem;color:var(--emerald);font-weight:900;font-family:var(--display)}
+.services .sec-desc{max-width:560px;margin-bottom:3rem}
+.srv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.srv{background:var(--bone-dark);padding:2rem 1.6rem 2rem 1.9rem;position:relative;border:1px solid transparent;transition:all .3s;border-radius:4px}
+.srv::before{content:'';position:absolute;left:0;top:0;width:3px;height:100%;background:var(--champagne);border-radius:4px 0 0 4px}
+.srv:hover{border-color:rgba(11,59,45,0.08);transform:translateY(-2px);box-shadow:0 4px 12px rgba(11,59,45,0.06)}
+.srv-icon{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--champagne);font-weight:600;margin-bottom:.6rem}
+.srv h3{font-size:.9rem;font-weight:600;margin-bottom:.5rem;color:var(--emerald)}
+.srv p{font-size:.88rem;color:var(--text-mid);line-height:1.7;font-weight:300}
+
+/* MID CTA */
+.mid-cta{padding:3rem 4rem;background:var(--bone-dark);text-align:center}
+.mid-cta p{font-family:var(--display);font-size:clamp(1.2rem,2vw,1.6rem);font-weight:700;color:var(--emerald);margin-bottom:1.5rem}
+.mid-cta p em{font-style:italic;color:var(--champagne)}
+
+/* APPROACH */
+.approach{padding:5rem 4rem;background:var(--bone);display:grid;grid-template-columns:1.2fr 1fr;gap:4rem;align-items:start}
+.approach-container{max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:1.2fr 1fr;gap:4rem;align-items:start}
+.approach h2{font-family:var(--display);font-size:clamp(1.8rem,3vw,2.5rem);font-weight:900;margin-bottom:1.2rem;color:var(--emerald)}
+.approach p{font-size:1rem;margin-bottom:.8rem}
+.approach strong{color:var(--text-dark);font-weight:600}
+.proof-card{background:var(--emerald);padding:2.5rem;color:var(--bone);border-radius:4px}
+.proof-card .big{font-family:var(--display);font-size:3.5rem;font-weight:900;color:var(--champagne-light);line-height:1}
+.proof-card h3{font-family:var(--display);font-size:1.2rem;font-weight:700;margin:.4rem 0 .7rem}
+.proof-card p{color:rgba(245,241,235,0.5);font-size:.9rem;line-height:1.7}
+
+/* TEAM + WORK */
+.team-work{padding:5rem 4rem;background:var(--emerald);color:var(--bone)}
+.team-work-container{max-width:1200px;margin:0 auto}
+.team-work h2{font-family:var(--display);font-size:clamp(1.8rem,3vw,2.5rem);color:var(--bone);margin-bottom:.5rem;font-weight:900}
+.team-work .sec-desc{color:rgba(245,241,235,0.45);max-width:560px;margin-bottom:3rem}
+.tw-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.tw-card{background:var(--emerald-deep);padding:2.2rem;border-top:2px solid var(--champagne);transition:background .3s;border-radius:4px}
+.tw-card:hover{background:var(--emerald-light)}
+.tw-name{font-family:var(--display);font-size:1.6rem;font-weight:700}
+.tw-role{color:var(--champagne-light);font-size:.7rem;font-weight:600;margin-top:.25rem;text-transform:uppercase;letter-spacing:.05em}
+.tw-sub{color:rgba(245,241,235,0.3);font-size:.65rem;margin-top:.15rem}
+.tw-highlights{list-style:none;margin-top:1.2rem;display:flex;flex-direction:column;gap:.35rem}
+.tw-highlights li{font-size:.82rem;color:rgba(245,241,235,0.5);padding-left:.9rem;position:relative;font-weight:300}
+.tw-highlights li::before{content:'';position:absolute;left:0;top:.42rem;width:4px;height:4px;background:var(--champagne-light);border-radius:50%}
+.tw-links{margin-top:1.2rem;padding-top:1rem;border-top:1px solid rgba(245,241,235,0.06);display:flex;flex-wrap:wrap;gap:.5rem}
+.tw-links a{font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--champagne-light);text-decoration:none;padding:.3rem .7rem;border:1px solid rgba(245,241,235,0.1);transition:all .2s;font-weight:500;border-radius:2px}
+.tw-links a:hover{background:rgba(245,241,235,0.06);border-color:var(--champagne-light)}
+
+/* AUDIENCE */
+.audience{padding:5rem 4rem;background:var(--bone-dark)}
+.audience-container{max-width:1200px;margin:0 auto}
+.audience h2{font-family:var(--display);font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:900;margin-bottom:.5rem;color:var(--emerald)}
+.audience .sec-desc{max-width:500px;margin-bottom:2.5rem}
+.aud-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid rgba(11,59,45,0.08)}
+.aud{padding:1.8rem 1.4rem;border-right:1px solid rgba(11,59,45,0.08);transition:background .2s}
+.aud:last-child{border-right:none}
+.aud:hover{background:rgba(11,59,45,0.03)}
+.aud h4{font-family:var(--display);font-size:.95rem;font-weight:700;color:var(--emerald);margin-bottom:.4rem}
+.aud p{font-size:.85rem;color:var(--text-mid);line-height:1.6;font-weight:300}
+
+/* CONTACT */
+.contact{padding:5rem 4rem;background:var(--bone);text-align:center}
+.contact-container{max-width:600px;margin:0 auto}
+.contact h2{font-family:var(--display);font-size:clamp(1.8rem,3.5vw,2.8rem);margin:0 auto .6rem;color:var(--emerald);font-weight:900}
+.contact .sec-desc{max-width:480px;margin:0 auto 2rem}
+.contact-btns{display:flex;justify-content:center;gap:1rem;margin-bottom:2rem}
+.btn-em{display:inline-block;padding:.85rem 2.2rem;background:var(--emerald);color:var(--bone);font-weight:600;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:all .3s;border:none;cursor:pointer;border-radius:4px}
+.btn-em:hover{background:var(--emerald-light);transform:translateY(-2px)}
+.btn-ol{display:inline-block;padding:.85rem 2.2rem;background:transparent;border:2px solid var(--emerald);color:var(--emerald);font-weight:600;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:all .3s;border-radius:4px}
+.btn-ol:hover{background:var(--emerald);color:var(--bone);transform:translateY(-2px)}
+.contact-form{max-width:480px;margin:0 auto 2rem;display:flex;flex-direction:column;gap:.8rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.contact-form input,.contact-form textarea{background:var(--bone-dark);border:1px solid rgba(11,59,45,0.1);padding:.9rem 1.2rem;font-family:var(--body);font-size:.85rem;color:var(--text-dark);outline:none;transition:all .3s;width:100%;border-radius:4px}
+.contact-form input:focus,.contact-form textarea:focus{border-color:var(--champagne);box-shadow:0 0 0 3px rgba(168,144,88,0.1)}
+.contact-form textarea{resize:vertical;min-height:100px}
+.contact-form button{align-self:center;margin-top:.5rem}
+.form-note{font-size:.65rem;color:var(--text-light);margin-bottom:1.5rem;letter-spacing:.05em;text-transform:uppercase;font-weight:600}
+.contact-people{display:flex;justify-content:center;gap:5rem;margin-top:2rem}
+.cp{text-align:left}
+.cp h4{font-family:var(--display);font-size:.95rem;font-weight:700;color:var(--emerald)}
+.cp .role{color:var(--champagne);font-size:.65rem;font-weight:500;margin-top:.15rem;text-transform:uppercase;letter-spacing:.05em}
+.cp a{color:var(--text-mid);font-size:.72rem;text-decoration:none;display:block;margin-top:.25rem;transition:color .3s;font-weight:500}
+.cp a:hover{color:var(--champagne)}
+
+/* FOOTER */
+footer{padding:3rem 4rem;background:var(--emerald-deep);color:rgba(245,241,235,0.35);display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(245,241,235,0.06)}
+footer p{font-size:.75rem;letter-spacing:.02em}
+footer span{color:var(--champagne-light);font-weight:600}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .approach{grid-template-columns:1fr}
+  .gap-grid{grid-template-columns:repeat(2,1fr)}
+  .srv-grid{grid-template-columns:repeat(2,1fr)}
+  .tw-grid{grid-template-columns:1fr}
+  .aud-row{grid-template-columns:repeat(2,1fr);gap:0}
+  .aud{border-right:1px solid rgba(11,59,45,0.08);border-bottom:1px solid rgba(11,59,45,0.08)}
+  .aud:nth-child(2n){border-right:none}
+}
+@media(max-width:768px){
+  nav{padding:1rem 1.5rem}
+  .logo-text{font-size:.65rem}
+  .hm-letters{font-size:1.2rem}
+  .hero{grid-template-columns:1fr;padding-top:3rem}
+  .hero-data{display:none}
+  .hero-content{padding:3rem 1.5rem}
+  section{padding:3rem 1.5rem}
+  .gap-section,.why-now,.services,.contact{padding:3rem 1.5rem}
+  .approach{padding:3rem 1.5rem}
+  .team-work{padding:3rem 1.5rem}
+  .audience{padding:3rem 1.5rem}
+  footer{padding:2rem 1.5rem;flex-direction:column;gap:1rem;text-align:center}
+  .gap-grid{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr}
+  .srv-grid{grid-template-columns:1fr}
+  .tw-grid{grid-template-columns:1fr}
+  .aud-row{grid-template-columns:1fr}
+  .aud{border-right:none;border-bottom:1px solid rgba(11,59,45,0.08)}
+  .contact-people{flex-direction:column;gap:2rem}
+  .hero h1{font-size:2rem}
+  .sec-title{font-size:1.6rem}
+  .nav-links{gap:1.5rem}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="logo-mark">
+    <div class="hm-logo">
+      <div class="hm-letters">HM</div>
+      <div class="hm-rule"></div>
+    </div>
+    <span class="logo-text">MEDIA</span>
+  </a>
+  <div class="nav-links">
+    <a href="#why-now">Why now</a>
+    <a href="#approach">Approach</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow">Spanish-language content</div>
+    <h1>The real connection happens in <em>Spanish</em></h1>
+    <p class="hero-body">We're a content studio that builds Spanish-language editorial, live coverage, and cultural storytelling for the U.S. Hispanic sports market. AI-powered, culturally precise, real-time.</p>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn-main">Let's talk →</a>
+      <a href="#approach" class="btn-line">See our approach →</a>
+    </div>
+  </div>
+  <div class="hero-data">
+    <div class="data-row">
+      <div class="data-num">60M+</div>
+      <div>
+        <div class="data-label">Spanish speakers in the U.S.</div>
+        <div class="data-src">Pew, 2023</div>
+      </div>
+    </div>
+    <div class="data-row">
+      <div class="data-num">37%</div>
+      <div>
+        <div class="data-label">More loyal to brands sponsoring sports</div>
+        <div class="data-src">Nielsen, 2022</div>
+      </div>
+    </div>
+    <div class="data-row">
+      <div class="data-num">$28B</div>
+      <div>
+        <div class="data-label">Annual sports spending (Hispanic market)</div>
+        <div class="data-src">Nielsen, 2023</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GAP ANALYSIS -->
+<section class="gap-section">
+  <div class="gap-container">
+    <div class="sec-label">The opportunity</div>
+    <h2 class="gap-title">A massive gap in coverage</h2>
+    <p class="gap-subtitle">Major sports leagues have near-zero Spanish-language presence on social media. Meanwhile, 60M+ Spanish speakers are the fastest-growing sports audience in the US.</p>
+    <div class="gap-grid">
+      <div class="gap-card">
+        <div class="league-stat">0</div>
+        <div class="league-sub">Official Spanish posts from most NFL teams</div>
+        <div class="gap-source">Instagram audit, 2024</div>
+      </div>
+      <div class="gap-card">
+        <div class="league-stat">1.2M</div>
+        <div class="league-sub">Spanish-language sports fans following competitors</div>
+        <div class="gap-source">TikTok, 2024</div>
+      </div>
+      <div class="gap-card">
+        <div class="league-stat">4x</div>
+        <div class="league-sub">Higher engagement in Spanish vs English sports content</div>
+        <div class="gap-source">Meta Insights, 2024</div>
+      </div>
+      <div class="gap-card">
+        <div class="league-stat">$8B</div>
+        <div class="league-sub">Untapped Spanish-language ad spend (sports)</div>
+        <div class="gap-source">eMarketer, 2023</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY NOW -->
+<section class="why-now" id="why-now">
+  <div class="sec-label">Why this matters</div>
+  <h2 class="sec-title">The moment is now</h2>
+  <div class="why-grid">
+    <div class="why-item">
+      <div class="why-date">March 2024</div>
+      <div class="why-event">Apple Sports+ launches in Latin America</div>
+      <div class="why-detail">Streaming wars force leagues to think regional. Spanish-language editorial is the missing piece.</div>
+    </div>
+    <div class="why-item">
+      <div class="why-date">October 2024</div>
+      <div class="why-event">MLB/TikTok partnership explodes</div>
+      <div class="why-detail">Leagues realize short-form video content in Spanish = instant audience.</div>
+    </div>
+    <div class="why-item">
+      <div class="why-date">Ongoing</div>
+      <div class="why-event">US Hispanic population growth</div>
+      <div class="why-detail">Already 19.5% of population. Projected to be 25% by 2050. This is the US market.</div>
+    </div>
+    <div class="why-item">
+      <div class="why-date">2025+</div>
+      <div class="why-event">AI editorial automation</div>
+      <div class="why-detail">Real-time sports storytelling at scale now possible. Cultural precision = competitive advantage.</div>
+    </div>
+    <div class="why-item why-full">
+      <div class="why-cta"><strong>Every league, media company, and brand that reaches US audiences needs Spanish-language sports coverage NOW.</strong> Not as a "Latino initiative." As core strategy.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+  <div class="services-container">
+    <div class="sec-label">What we do</div>
+    <h2>Services for every stage</h2>
+    <p class="sec-desc">Whether you need daily content, event coverage, or full audience strategy — we scale to your needs.</p>
+    <div class="srv-grid">
+      <div class="srv">
+        <div class="srv-icon">📰 Editorial</div>
+        <h3>Spanish-language editorial</h3>
+        <p>AI-powered blog posts, game recaps, analysis, and columns. Published daily to your blog, social, and newsletter. Culturally native, not translated.</p>
+      </div>
+      <div class="srv">
+        <div class="srv-icon">🔴 Live coverage</div>
+        <h3>Real-time social coverage</h3>
+        <p>Live tweets, TikToks, Reels during games. Same-minute updates. Instant reactions. The kind of engagement English-language coverage misses.</p>
+      </div>
+      <div class="srv">
+        <div class="srv-icon">🎯 Strategy</div>
+        <h3>Audience growth & GEO</h3>
+        <p>Content calendar, audience targeting, platform optimization. We grow your Hispanic audience from zero to thousands of engaged followers.</p>
+      </div>
+      <div class="srv">
+        <div class="srv-icon">🤖 Automation</div>
+        <h3>Content automation</h3>
+        <p>Set up once, run forever. Automated posts, scheduled coverage, real-time triggers. You handle strategy. We handle execution.</p>
+      </div>
+      <div class="srv">
+        <div class="srv-icon">📊 SEO</div>
+        <h3>Spanish-language SEO</h3>
+        <p>Keyword research, on-page optimization, backlink strategy in Spanish. Rank #1 in Spanish search results for your audience.</p>
+      </div>
+      <div class="srv">
+        <div class="srv-icon">📱 Generative</div>
+        <h3>AI content engines</h3>
+        <p>Custom AI models trained on your brand voice. Generate unlimited posts, captions, and micro-content in seconds. Always on-brand.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MID CTA -->
+<section class="mid-cta">
+  <p>The best sports content in America is being made for <em>only one language.</em></p>
+</section>
+
+<!-- APPROACH -->
+<section class="approach" id="approach">
+  <div>
+    <h2>Our approach</h2>
+    <p>We don't just translate. We translate culture. Every piece of content is written for Spanish-speaking audiences — not English content run through Google Translate.</p>
+    <p><strong>1. Cultural intelligence</strong> — We understand the nuances of Latino sports fandom. Different leagues matter. Different players are heroes. Different moments resonate.</p>
+    <p><strong>2. Real-time accuracy</strong> — Game updates aren't on delay. Your audience sees the goal, the fumble, the strike in Spanish the same moment English speakers do.</p>
+    <p><strong>3. AI + human</strong> — Automation handles volume. Humans handle culture. The result is content that feels native, not robotic.</p>
+  </div>
+  <div>
+    <div class="proof-card">
+      <div class="big">4x</div>
+      <h3>Higher engagement</h3>
+      <p>Sports content in Spanish gets 4x more engagement than English on the same platforms, when done right.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM + WORK -->
+<section class="team-work">
+  <div class="team-work-container">
+    <div class="sec-label">Who's building this</div>
+    <h2>Two reporters. One mission.</h2>
+    <p class="sec-desc">We've spent years covering sports, building audiences, and understanding what resonates with Latino fans. Now we're scaling it.</p>
+    <div class="tw-grid">
+      <div class="tw-card">
+        <div class="tw-name">Jonathan Wiktor</div>
+        <div class="tw-role">Co-founder · AI Growth</div>
+        <div class="tw-sub">Senior multimedia reporter</div>
+        <ul class="tw-highlights">
+          <li>Multimedia reporter & AI specialist at TN Todo Noticias</li>
+          <li>Real-time sports coverage & audience engagement</li>
+          <li>Content automation & editorial workflows</li>
+        </ul>
+        <div class="tw-links">
+          <a href="https://linkedin.com/in/jonathanwiktor" target="_blank">LinkedIn</a>
+          <a href="https://instagram.com/wiktorjonathan" target="_blank">Instagram</a>
+        </div>
+      </div>
+      <div class="tw-card">
+        <div class="tw-name">Federico Trabucci</div>
+        <div class="tw-role">Co-founder · UX & Design</div>
+        <div class="tw-sub">Strategy & user experience</div>
+        <ul class="tw-highlights">
+          <li>UX design & product strategy</li>
+          <li>Audience growth & engagement</li>
+          <li>Content distribution across platforms</li>
+        </ul>
+        <div class="tw-links">
+          <a href="https://tn.com.ar/autor/Fedepbj/" target="_blank">TN Todo Noticias</a>
+          <a href="https://www.linkedin.com/in/federicotrabucci/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AUDIENCE -->
+<section class="audience">
+  <div class="audience-container">
+    <div class="sec-label">Who we serve</div>
+    <h2>Are you ready to capture this audience?</h2>
+    <div class="aud-row">
+      <div class="aud">
+        <h4>Sports leagues & teams</h4>
+        <p>NFL, NBA, MLB, MLS, NHL. Most have zero Spanish social presence. We build the editorial bridge to millions of fans already watching.</p>
+      </div>
+      <div class="aud">
+        <h4>Media companies</h4>
+        <p>Scale Spanish-language output without expanding your team. AI-powered editorial with cultural precision and real-time coverage.</p>
+      </div>
+      <div class="aud">
+        <h4>Brands & advertisers</h4>
+        <p>Latinos are 37% more loyal to brands sponsoring sports. We create the content ecosystem that earns that loyalty.</p>
+      </div>
+      <div class="aud">
+        <h4>Digital platforms</h4>
+        <p>Discover, Apple News, generative engines, social feeds. SEO and GEO-native editorial at scale for every channel.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-container">
+    <div class="sec-label">Let's talk</div>
+    <h2>Ready to reach the Hispanic market?</h2>
+    <p class="sec-desc">Whether you're a league, media company, brand, or platform — if your audience speaks Spanish, we should be talking.</p>
+    <div class="contact-btns">
+      <a href="mailto:jonathan@halftime.media" class="btn-em">Email us →</a>
+      <a href="https://instagram.com/wiktorjonathan" target="_blank" class="btn-ol">Instagram →</a>
+    </div>
+    <form class="contact-form" action="https://formspree.io/f/xyzgwkdp" method="POST">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="text" name="company" placeholder="Company / Organization">
+      </div>
+      <input type="email" name="email" placeholder="Your email" required>
+      <textarea name="message" placeholder="Tell us about your project — what audience are you trying to reach?" rows="4" required></textarea>
+      <button type="submit" class="btn-em">Send message →</button>
+    </form>
+    <div class="form-note">Or reach us directly:</div>
+    <div class="contact-people">
+      <div class="cp">
+        <h4>Jonathan Wiktor</h4>
+        <div class="role">Co-founder · AI Growth</div>
+        <a href="mailto:jonathan@halftime.media">jonathan@halftime.media</a>
+      </div>
+      <div class="cp">
+        <h4>Federico Trabucci</h4>
+        <div class="role">Co-founder · UX & Design</div>
+        <a href="mailto:federico@halftime.media">federico@halftime.media</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2026 HALFTIME <span>MEDIA</span></p>
+  <p>Spanish-language sports content powered by AI with Latino soul. Buenos Aires × New York × Miami</p>
+</footer>
+
+</body>
+</html>
